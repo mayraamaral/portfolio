@@ -1,157 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayra Amaral | Developer | Portfolio</title>
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayra Amaral | Developer | Portfolio</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="container">
+          <div class="menu">
+            <span class="fa-solid fa-terminal"></span>
 
-  <header>
-    <div class="container">
-      <div class="menu">
-        <span class="fa-solid fa-terminal"></span>
-        
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <!-- <li><a href="#experiencia">Experiência</a></li> -->
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section class="banner">
-    <!-- <span class="fa-regular fa-keyboard"></span> -->
-    <h1>Mayra Amaral</h1>
-    <h2>Developer</h2>
-    <a href="./cv" target="_blank">
-      <button class="btn"><span class="fa-solid fa-file"></span>Abrir CV</button>
-    </a>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/mayraamaral/" target="_blank">
-        <span class="fa-brands fa-linkedin"></span>
-      </a>
-      <a href="https://github.com/mayraamaral" target="_blank">
-        <span class="fa-brands fa-github-square"></span>
-      </a>
-    </div>
-  </section>
-
-  <section class="bg-cinza" id="sobre-mim">
-    <div class="container">
-      <div class="sobre-mim">
-          <h1>Sobre mim</h1>
-        <div class="terminal">
-          <div class="topo-terminal">
-            <div class="btn-fechar"></div>
-            <div class="btn-minimizar"></div>
-            <div class="btn-maximizar"></div>
-          </div>
-          <div class="terminal-text">
-            <p>Meu nome é <strong>Mayra Amaral</strong>.</p>
-            <p>Eu sou desenvolvedora e apaixonada por criar soluções. A tecnologia está na minha vida desde criança e vejo-a como uma forma de atingir os resultados desejados.</p>
-            <p>Estou cursando Análise e Desenvolvimento de Sistemas e trabalho como estagiária de front-end na <strong>DBC Company</strong>.</p>
+            <nav>
+              <ul>
+                <li class="current"><a href="#" data-hover="Home">Home</a></li>
+                <li>
+                  <a href="#sobre-mim" data-hover="Sobre mim">Sobre mim</a>
+                </li>
+                <li><a href="#" data-hover="Experiência">Experiência</a></li>
+                <li><a href="#" data-hover="Projetos">Projetos</a></li>
+                <li><a href="#" data-hover="Contato">Contato</a></li>
+                <li><a href="#" data-hover="Blog">Blog</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section class="bg-azul" id="experiencia">
-    <div class="container">
-      <div class="experiencia">
-        <div class="experiencia-text">
-          <span class="fa-solid fa-briefcase"></span>
-          <h1>Experiência</h1>
-        </div>
-        <div class="trabalhos">
-          <div class="empresa">
-            <div class="empresa-text">
-              <span class="fa-solid fa-rocket"></span>
-              <a href="https://www.dbccompany.com.br"><h2>DBC Company</h2></a>
-            </div>
-            <p>jun. 2022 - Atualmente</p>
-          </div>
-          <div class="funcao">
-            <p>Estagiária Front-End</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section class="bg-azul" id="projetos">
-    <div class="container">
-      <div class="projetos">
-        <h2>Projetos</h2>
-        <div class="projetos-cards">
-          <div class="card">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia!</p>
-            <div class="card-icons">
-              <a href=""><span class="fa-solid fa-link"></span></a>
-              <a href=""><span class="fa-brands fa-github-square"></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia!</p>
-            <div class="card-icons">
-              <a href=""><span class="fa-solid fa-link"></span></a>
-              <a href=""><span class="fa-brands fa-github-square"></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia!</p>
-            <div class="card-icons">
-              <a href=""><span class="fa-solid fa-link"></span></a>
-              <a href=""><span class="fa-brands fa-github-square"></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia!</p>
-            <div class="card-icons">
-              <a href=""><span class="fa-solid fa-link"></span></a>
-              <a href=""><span class="fa-brands fa-github-square"></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia!</p>
-            <div class="card-icons">
-              <a href=""><span class="fa-solid fa-link"></span></a>
-              <a href=""><span class="fa-brands fa-github-square"></span></a>
-            </div>
-          </div>
-          <div class="card">
-            <h3>Título</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia!</p>
-            <div class="card-icons">
-              <a href=""><span class="fa-solid fa-link"></span></a>
-              <a href=""><span class="fa-brands fa-github-square"></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-cinza">
-    <div class="container">
-      <div class="contato">
-        <h2>Contato</h2>
-        <a href="mailto:contato@mayraamaral.me"><span class="fa-solid fa-envelope"></span>contato@mayraamaral.me</a>
+      </header>
+      <section class="banner">
+        <!-- <span class="fa-regular fa-keyboard"></span> -->
+        <h1 class="principal">Mayra Amaral</h1>
+        <h3>Software Engineer</h3>
+        <a href="./cv" target="_blank" class="btn">
+          <span class="btn-span">
+            <i class="fa-solid fa-file"></i>
+            CV
+          </span>
+        </a>
         <div class="social">
           <a href="https://www.linkedin.com/in/mayraamaral/" target="_blank">
             <span class="fa-brands fa-linkedin"></span>
@@ -160,10 +52,11 @@
             <span class="fa-brands fa-github-square"></span>
           </a>
         </div>
-        <p>&copy; Mayra Amaral. 2022. Feito com &#9829</p>
-      </div>
+      </section>
+
+      <section class="sobre-mim" id="sobre-mim">
+        <h2 class="principal">Sobre mim</h2>
+      </section>
     </div>
-  </footer>
-  
-</body>
+  </body>
 </html>
