@@ -4,6 +4,13 @@ It's under development. The main goal for this site is to show my professional p
 
 ## Summary
 
+- [Application](https://github.com/mayraamaral/portfolio#-application)
+- [Technologies](https://github.com/mayraamaral/portfolio#%EF%B8%8F-technologies)
+  - [Portfolio](https://github.com/mayraamaral/portfolio#portfolio)
+  - [Blog](https://github.com/mayraamaral/portfolio#blog)
+- [Folder structure](https://github.com/mayraamaral/portfolio#-folder-structure)
+- [Goals accomplished](https://github.com/mayraamaral/portfolio#-goals-accomplished)
+
 ## 📲 Application
 
 🔗 **[PT-BR] Portfolio:** [https://mayra.dev](https://mayra.dev)  
