@@ -54,3 +54,20 @@ nav ul li {
   height: 100%;
   padding: 20px 0;
 }
+
+.experiencia {
+  height: 100%;
+  padding: 40px 0;
+}
+
+.experiencia > .container > div {
+  flex-direction: column;
+}
+
+.experiencia hr {
+  display: none;
+}
+
+.experiencia i {
+  display: none;
+}

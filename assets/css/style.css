@@ -6,6 +6,11 @@
   font-family: 'Nunito', sans-serif;
 }
 
+body {
+  background-color: #121212;
+  color: white;
+}
+
 header {
   background-color: #212529;
   width: 100vw;
@@ -41,8 +46,8 @@ section {
   align-items: center;
 }
 
-body {
-  background-color: #121212;
+p {
+  color: white;
 }
 
 nav ul {
@@ -208,12 +213,6 @@ nav ul .current a:after {
   align-items: center;
 }
 
-.sobre-mim h1 {
-  padding: 40px 0;
-  font-size: 40px;
-  text-align: center;
-}
-
 .sobre-mim-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -233,4 +232,48 @@ nav ul .current a:after {
   width: 300px;
   justify-self: center;
   border-radius: 100%;
+}
+
+.sobre-mim h1, .experiencia h1 {
+  padding: 40px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.experiencia {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experiencia li {
+  list-style-type: none;
+  
+}
+
+.experiencia h2, .experiencia h3 {
+  display: inline;
+  margin-right: 20px;
+}
+
+.experiencia i {
+  font-size: 80px;
+}
+
+.experiencia ul {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.experiencia > .container > div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.experiencia hr {
+  width: 1px;
+  height: 200px;
 }
