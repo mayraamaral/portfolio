@@ -1,58 +1,27 @@
-# Mayra Amaral's portfolio
+# Portfolio
 
-It's under development. The main goal for this site is to show my professional profile, my knowledge and my work.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
-## Summary
+## Development server
 
-- [Application](https://github.com/mayraamaral/portfolio#-application)
-- [Technologies](https://github.com/mayraamaral/portfolio#%EF%B8%8F-technologies)
-  - [Portfolio](https://github.com/mayraamaral/portfolio#portfolio)
-  - [Blog](https://github.com/mayraamaral/portfolio#blog)
-- [Folder structure](https://github.com/mayraamaral/portfolio#-folder-structure)
-- [Goals accomplished](https://github.com/mayraamaral/portfolio#-goals-accomplished)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## 📲 Application
+## Code scaffolding
 
-🔗 **[PT-BR] Portfolio:** [https://mayra.dev](https://mayra.dev)  
-🔗 **[PT-BR] Blog:** [https://blog.mayra.dev](https://blog.mayra.dev)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## 🛠️ Technologies
+## Build
 
-### Portfolio
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- HTML;
-- CSS;
-- JavaScript;
-- Deploy: Vercel.
+## Running unit tests
 
-### Blog
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- Deploy: Hashnode.
+## Running end-to-end tests
 
-## 📁 Folder structure
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-`./portfolio`  
-├── `assets` -> _useful files_  
-├── `cv` -> _folder with my resume_  
-└── `README.md` -> _this file_
+## Further help
 
-`./portfolio/assets`  
-├── `css` -> _css files including both desktop and mobile versions_  
-└── `img` -> _image files_
-
-`./portfolio/assets/img`  
-└── `favicon` -> _pictures of different favicon sizes to include all devices_
-
-## 🎯 Goals accomplished
-
-- [x] SEO;
-- [x] Header;
-- [x] Beginning;
-- [x] About;
-- [x] Experience;
-- [ ] Projects;
-- [ ] Contact;
-- [ ] CV;
-- [ ] English version;
-- [ ] Mobile version;
-- [ ] Tablet version.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
