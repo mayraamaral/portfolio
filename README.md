@@ -30,28 +30,32 @@ It's under development. The main goal for this site is to show my professional p
 
 ## 📁 Folder structure
 
-`./portfolio`  
-├── `assets` -> _useful files_  
-├── `cv` -> _folder with my resume_  
-└── `README.md` -> _this file_
-
-`./portfolio/assets`  
-├── `css` -> _css files including both desktop and mobile versions_  
-└── `img` -> _image files_
-
-`./portfolio/assets/img`  
-└── `favicon` -> _pictures of different favicon sizes to include all devices_
+```md
+📦src  
+┣ 📂app  
+┃ ┣ 📂about-me
+┃ ┣ 📂academic-background  
+┃ ┣ 📂banner  
+┃ ┣ 📂contact  
+┃ ┣ 📂experience  
+┃ ┣ 📂header  
+┃ ┣ 📂projects  
+┣ 📂assets  
+┃ ┗ 📂favicon  
+┣ 📜index.html  
+┣ 📜main.ts  
+┗ 📜styles.css
+```
 
 ## 🎯 Goals accomplished
 
 - [x] SEO;
 - [x] Header;
-- [ ] Beginning;
-- [ ] About;
-- [ ] Experience;
-- [ ] Education;
-- [ ] Projects;
-- [ ] Contact;
-- [ ] CV;
+- [x] Banner;
+- [x] About me;
+- [x] Experience;
+- [x] Academic Background;
+- [x] Projects;
+- [x] Contact;
 - [ ] English version;
-- [ ] Mobile version.
+- [x] Mobile version.
