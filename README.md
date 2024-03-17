@@ -30,20 +30,20 @@ It's under development. The main goal for this site is to show my professional p
 
 ## 📁 Folder structure
 
-```md
-📦src  
-┣ 📂app  
+```
+📦src
+┣ 📂app
 ┃ ┣ 📂about-me
-┃ ┣ 📂academic-background  
-┃ ┣ 📂banner  
-┃ ┣ 📂contact  
-┃ ┣ 📂experience  
-┃ ┣ 📂header  
-┃ ┣ 📂projects  
-┣ 📂assets  
-┃ ┗ 📂favicon  
-┣ 📜index.html  
-┣ 📜main.ts  
+┃ ┣ 📂academic-background
+┃ ┣ 📂banner
+┃ ┣ 📂contact
+┃ ┣ 📂experience
+┃ ┣ 📂header
+┃ ┣ 📂projects
+┣ 📂assets
+┃ ┗ 📂favicon
+┣ 📜index.html
+┣ 📜main.ts
 ┗ 📜styles.css
 ```
 
