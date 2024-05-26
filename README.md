@@ -22,7 +22,7 @@ It's under development. The main goal for this site is to show my professional p
 
 - Angular v16;
 - TypeScript;
-- Deploy: Vercel.
+- Deploy: Github Actions & Portainer.
 
 ### Blog
 
