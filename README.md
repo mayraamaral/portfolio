@@ -26,7 +26,7 @@ It's under development. The main goal for this site is to show my professional p
 
 ### Blog
 
-- Deploy: Hashnode.
+- Deploy: Wordpress.
 
 ## 📁 Folder structure
 
