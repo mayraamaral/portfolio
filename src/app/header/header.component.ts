@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,6 @@ export class HeaderComponent implements OnInit {
   isDarkMode: boolean = false;
 
   ngOnInit(): void {
-    // Checar se o usuário tem uma preferência armazenada no localStorage
     const theme = localStorage.getItem('theme');
     if (theme) {
       this.isDarkMode = theme === 'dark';
@@ -24,11 +23,11 @@ export class HeaderComponent implements OnInit {
   }
 
   updateTheme(): void {
-  const htmlElement = document.documentElement;
-  if (this.isDarkMode) {
-    htmlElement.classList.add('dark');
-  } else {
-    htmlElement.classList.remove('dark');
-  }
+    const htmlElement = document.documentElement;
+    if (this.isDarkMode) {
+      htmlElement.classList.add('dark');
+    } else {
+      htmlElement.classList.remove('dark');
+    }
   }
 }

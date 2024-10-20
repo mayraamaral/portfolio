@@ -64,17 +64,3 @@
     </div>
   </div>
 </nav>
-
-<script>
-  // Script para alternar visibilidade do menu no mobile
-  const menuBtn = document.getElementById('menu-btn');
-  const navbar = document.getElementById('navbar-default');
-
-  menuBtn.addEventListener('click', () => {
-    navbar.classList.toggle('hidden'); // Alterna o menu entre visível e oculto
-    navbar.classList.toggle('absolute'); // Garante que o menu apareça sobre o conteúdo
-    navbar.classList.toggle('top-full'); // Posiciona o menu logo abaixo do header no mobile
-    navbar.classList.toggle('left-0'); // Posiciona o menu alinhado à esquerda
-    navbar.classList.toggle('right-0'); // Faz o menu ocupar toda a largura no mobile
-  });
-</script>
