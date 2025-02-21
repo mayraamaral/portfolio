@@ -22,11 +22,14 @@ It's under development. The main goal for this site is to show my professional p
 
 - Angular v16;
 - TypeScript;
-- Deploy: Github Actions & Portainer.
+- Tailwind;
+- Deploy: Vercel.
 
 ### Blog
 
-- Deploy: Wordpress.
+- Wordpress v6;
+- SeverlessWP;
+- Deploy: Vercel.
 
 ## 📁 Folder structure
 
