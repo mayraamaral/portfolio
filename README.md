@@ -1,5 +1,10 @@
 # Mayra Amaral's portfolio
+<p align="center">
+<img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" alt="Angular badge" />
+<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript badge" />
+<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind badge" />
 
+</p>
 It's under development. The main goal for this site is to show my professional profile, my knowledge and my work.
 
 ## Summary
