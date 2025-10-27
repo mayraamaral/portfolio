@@ -106,7 +106,7 @@ export function Header() {
         <div className="ml-6 flex items-center gap-3">
           <button
             onClick={toggleTheme}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-white transition hover:bg-white/10"
+            className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-white transition hover:bg-white/10"
             aria-label={isDarkMode ? "Ativar tema claro" : "Ativar tema escuro"}
             type="button"
           >
@@ -114,7 +114,7 @@ export function Header() {
           </button>
           <button
             onClick={() => setIsMenuOpen((value) => !value)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-zinc-300 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-blue-500 md:hidden"
+            className="inline-flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg text-zinc-300 transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-blue-500 md:hidden"
             aria-controls="primary-navigation"
             aria-expanded={isMenuOpen}
             type="button"
