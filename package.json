@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3030",
-    "build": "next build --output public",
+    "build": "next build",
     "start": "next start -p 3030",
     "lint": "eslint"
+  },
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=20.9"
   },
   "dependencies": {
     "next": "16.0.0",
