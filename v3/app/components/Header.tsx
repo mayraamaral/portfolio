@@ -15,11 +15,28 @@ const NAV_ITEMS = [
 export function Header() {
   const [theme, setTheme] = useState<"light" | "dark">(() => getInitialTheme());
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const isDarkMode = theme === "dark";
+
+  const desktopLinkClass = () => "nav-link";
+
+  const mobileLinkClass = () => "nav-link-mobile";
 
   useEffect(() => {
     updateHtmlTheme(theme);
   }, [theme]);
+
+  useEffect(() => {
+    const updateFromHash = () => {
+      if (typeof window === "undefined") return;
+      const hash = window.location.hash || "#home";
+      setActiveSection(hash);
+    };
+
+    updateFromHash();
+    window.addEventListener("hashchange", updateFromHash);
+    return () => window.removeEventListener("hashchange", updateFromHash);
+  }, []);
 
   useEffect(() => {
     if (!isMenuOpen) return;
@@ -64,7 +81,12 @@ export function Header() {
           <ul className="flex gap-6 text-sm font-medium">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
-                <a href={item.href} className="transition hover:text-blue-400">
+                <a
+                  href={item.href}
+                  onClick={() => setActiveSection(item.href)}
+                  className={desktopLinkClass()}
+                  data-active={activeSection === item.href}
+                >
                   {item.label}
                 </a>
               </li>
@@ -74,7 +96,7 @@ export function Header() {
                 href="https://blog.mayra.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition hover:text-blue-400"
+                className="transition text-white hover:text-[var(--accent)]"
               >
                 Blog
               </a>
@@ -108,8 +130,12 @@ export function Header() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block rounded px-3 py-2 transition hover:bg-white/10"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    setActiveSection(item.href);
+                  }}
+                  className={mobileLinkClass()}
+                  data-active={activeSection === item.href}
                 >
                   {item.label}
                 </a>
@@ -120,7 +146,7 @@ export function Header() {
                 href="https://blog.mayra.dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded px-3 py-2 transition hover:bg-white/10"
+                className="block rounded px-3 py-2 transition text-white hover:bg-white/10"
               >
                 Blog
               </a>

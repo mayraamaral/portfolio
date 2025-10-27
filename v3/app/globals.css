@@ -93,6 +93,30 @@ html.light {
     @apply text-[var(--hero-icon-hover)];
   }
 
+  .nav-link {
+    @apply transition;
+    color: var(--foreground);
+    opacity: 0.7;
+  }
+
+  .nav-link[data-active="true"] {
+    @apply font-semibold;
+    color: var(--accent);
+    opacity: 1;
+  }
+
+  .nav-link-mobile {
+    @apply block rounded px-3 py-2 transition hover:bg-white/10;
+    color: var(--foreground);
+    opacity: 0.8;
+  }
+
+  .nav-link-mobile[data-active="true"] {
+    @apply font-semibold;
+    color: var(--accent);
+    opacity: 1;
+  }
+
   .project-link,
   .project-link span,
   .project-link svg {

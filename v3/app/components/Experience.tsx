@@ -14,7 +14,7 @@ const EXPERIENCES: Experience[] = [
     url: "https://taspro.ai",
     period: "Desde abr/2025",
     description:
-      "Otimização de fluxos SQL críticos em 75%, fortalecimento de deploys com testes de integração e criação de um design system compartilhado que reduziu pela metade o tempo de entrega de componentes, além da entrega de notificações em tempo real com Redis + SSE.",
+      "Otimização e criação de queries SQL, fortalecimento de deploys com testes de integração e criação de um design system compartilhado que reduziu o tempo de entrega de componentes, além da entrega de notificações em tempo real com Redis + SSE.",
     badge: "Atual",
   },
   {
@@ -23,7 +23,7 @@ const EXPERIENCES: Experience[] = [
     url: "https://alura.com.br",
     period: "De mai/2024 a abr/2025",
     description:
-      "Responsável por um checkout agnóstico de provedores que adicionou ~R$ 500 mil em receita, otimização de consultas SQL em 75%, entregas com feature flags para acelerar feedbacks e eliminação de vulnerabilidades ao migrar de joda.time para java.time.",
+      "Responsável por um checkout agnóstico de provedores, otimização de consultas SQL através de técnicas avançadas como CTEs e subqueries, entregas com feature flags para acelerar feedbacks e eliminação de vulnerabilidades ao migrar de joda.time para java.time.",
   },
   {
     title: "Engenheira de Software Júnior",
