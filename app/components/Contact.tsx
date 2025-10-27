@@ -79,7 +79,7 @@ export function Contact() {
         </div>
         <button
           type="submit"
-          className="w-full rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[var(--accent-hover)] focus:outline-none focus:ring-4 focus:ring-[var(--accent-soft)] sm:w-auto"
+          className="w-full rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[var(--accent-hover)] focus:outline-none focus:ring-4 focus:ring-[var(--accent-soft)] sm:w-auto cursor-pointer"
         >
           Enviar
         </button>
