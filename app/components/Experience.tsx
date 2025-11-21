@@ -54,13 +54,13 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="flex flex-col items-center justify-center px-6 pt-32 pb-20"
+      className="min-h-screen flex flex-col items-center justify-center px-6 pt-32 pb-20"
     >
       <h2 className="text-4xl font-extrabold text-[var(--foreground)]">{t("title")}</h2>
       <ol className="relative mt-10 w-full max-w-3xl border-s border-[var(--surface-border)] pl-6">
         {EXPERIENCES.map((item, index) => (
           <li key={item.title + index} className="mb-12 last:mb-0">
-            <span className="absolute -start-[0.95rem] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-800 ring-8 ring-white dark:ring-zinc-900">
+            <span className="absolute -start-[0.95rem] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-800">
               <svg
                 className="h-2.5 w-2.5"
                 aria-hidden="true"

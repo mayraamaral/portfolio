@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center px-6 py-20"
+      className="flex min-h-screen flex-col items-center justify-center px-6 py-20"
     >
       <h2 className="text-4xl font-extrabold pb-10 text-[var(--foreground)]">{t("title")}</h2>
       <form

@@ -8,7 +8,7 @@ export function Banner() {
   return (
     <section
       id="home"
-      className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center gap-6 pt-32 text-center"
+      className="flex min-h-screen flex-col items-center justify-center gap-6 pt-32 text-center"
     >
       <h1 className="text-4xl font-extrabold text-[var(--foreground)] sm:text-5xl lg:text-6xl">
         Mayra Amaral

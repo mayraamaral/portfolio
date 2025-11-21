@@ -6,7 +6,7 @@ export function AboutMe() {
   return (
     <section
       id="about-me"
-      className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center gap-10 px-6 text-center"
+      className="flex min-h-screen flex-col items-center justify-center gap-10 px-6 text-center"
     >
       <h2 className="text-4xl font-extrabold text-[var(--foreground)] sm:text-5xl lg:text-6xl">
         {t("titlePart1")}

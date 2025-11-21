@@ -29,13 +29,13 @@ export function Academic() {
   return (
     <section
       id="academic-background"
-      className="flex flex-col items-center justify-center px-6 pt-32 pb-20"
+      className="flex min-h-screen flex-col items-center justify-center px-6 py-20"
     >
       <h2 className="text-4xl font-extrabold text-[var(--foreground)]">{t("title")}</h2>
       <ol className="relative mt-10 w-full max-w-3xl border-s border-[var(--surface-border)] pl-6">
         {STUDIES.map((study, index) => (
           <li key={study.title + index} className="mb-12 last:mb-0">
-            <span className="absolute -start-[0.95rem] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-800 ring-8 ring-white dark:ring-zinc-900">
+            <span className="absolute -start-[0.95rem] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-800">
               <svg
                 className="h-2.5 w-2.5"
                 aria-hidden="true"

@@ -71,7 +71,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center px-6 pt-32 pb-20"
+      className="flex min-h-screen flex-col items-center justify-center px-6 py-20"
     >
       <h2 className="text-4xl font-extrabold text-zinc-900 dark:text-white">{t("title")}</h2>
       <div className="mt-10 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
