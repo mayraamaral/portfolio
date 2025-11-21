@@ -8,6 +8,7 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 import cdcGif from "@/public/cdc-api.gif";
 import coursesGif from "@/public/courses-api.gif";
+import imageOptimizerGif from "@/public/image-optimizer.png";
 
 type Project = {
   title: string;
@@ -40,7 +41,7 @@ export function Projects() {
     {
       title: t("project2.title"),
       description: t("project2.description"),
-      image: "https://raw.githubusercontent.com/mayraamaral/image-optimizer-web/main/docs/app.png",
+      image: imageOptimizerGif,
       links: [
         {
           href: "https://github.com/mayraamaral/image-optimizer-web",
