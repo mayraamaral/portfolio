@@ -31,11 +31,6 @@ export function Projects() {
           label: "Github",
           icon: <FaGithub />,
         },
-        {
-          href: "https://github.com/mayraamaral/courses-api",
-          label: "Deploy",
-          icon: <FaLink />,
-        },
       ],
     },
     {
@@ -49,7 +44,7 @@ export function Projects() {
           icon: <FaGithub />,
         },
         {
-          href: "https://image-optimizer-f885de1c8e9a.herokuapp.com/",
+          href: "https://image-optimizer.mayra.cloud",
           label: "Deploy",
           icon: <FaLink />,
         },
@@ -64,6 +59,11 @@ export function Projects() {
           href: "https://github.com/mayraamaral/deveficiente-desafio-cdc",
           label: "Github",
           icon: <FaGithub />,
+        },
+        {
+          href: "https://cdc-java-api.mayra.cloud",
+          label: "Deploy",
+          icon: <FaLink />,
         },
       ],
     },
