@@ -1,0 +1,95 @@
+{
+  "Header": {
+    "home": "Home",
+    "aboutMe": "Sobre mim",
+    "experience": "Experiência",
+    "academic": "Formação",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "blog": "Blog",
+    "toggleThemeLight": "Ativar tema claro",
+    "toggleThemeDark": "Ativar tema escuro"
+  },
+  "Banner": {
+    "role": "Engenheira de Software apaixonada por desafios"
+  },
+  "AboutMe": {
+    "titlePart1": "Crio soluções",
+    "titlePart2": "de impacto",
+    "titlePart3": "através da tecnologia.",
+    "description": "Desenvolvedora desde 2015, especializada em Java e Spring, com experiência em diversas linguagens e tecnologias como Js/Node e Python. Possuo habilidades avançadas em Git, SQL, bancos de dados (SQL e NoSQL), APIs, testes unitários, clean code, Docker, Jenkins, Linux e shell script. Certificada em AWS, também tenho experiência em Azure. Sou apaixonada por resolver desafios reais e foco nos resultados, não apenas nas ferramentas."
+  },
+  "Academic": {
+    "title": "Formação",
+    "study1": {
+      "title": "Análise e Desenvolvimento de Sistemas",
+      "institution": "UNINTER - Centro Universitário Internacional",
+      "period": "De fev/2022 a jun/2024",
+      "description": "Participação no Google Developer Student Club e foco em ferramentas de desenvolvimento back-end como Python, Java, Spring Boot, SQL e modelagem de dados."
+    },
+    "study2": {
+      "title": "Técnica em Eletrônica",
+      "institution": "IFPB - Instituto Federal de Educação, Ciência e Tecnologia da Paraíba",
+      "period": "De mar/2015 a fev/2019",
+      "description": "Contato com linguagens como C, Python, Matlab e Java, desenvolvendo base sólida em lógica e desenvolvimento web."
+    }
+  },
+  "Experience": {
+    "title": "Experiência",
+    "experience1": {
+      "title": "Engenheira de Software Pleno",
+      "company": "Translational Analytics & Statistics",
+      "period": "Desde abr/2025",
+      "description": "Otimização e criação de queries SQL, fortalecimento de deploys com testes de integração e criação de um design system compartilhado que reduziu o tempo de entrega de componentes, além da entrega de notificações em tempo real com Redis + SSE.",
+      "badge": "Atual"
+    },
+    "experience2": {
+      "title": "Engenheira de Software Júnior",
+      "company": "Alura",
+      "period": "De mai/2024 a abr/2025",
+      "description": "Responsável por um checkout agnóstico de provedores, otimização de consultas SQL através de técnicas avançadas como CTEs e subqueries, entregas com feature flags para acelerar feedbacks e eliminação de vulnerabilidades ao migrar de joda.time para java.time."
+    },
+    "experience3": {
+      "title": "Engenheira de Software Júnior",
+      "company": "DBC Company",
+      "period": "De set/2022 a mai/2024",
+      "description": "Responsável pelo time de estagiários, liderando-os usando metodologias ágeis como Scrum e XP, resultando na criação de um sistema usado por milhares de pessoas sem instabilidade. Desenvolvimento de sistemas escaláveis, reduzindo burocracia e automatizando processos internos."
+    },
+    "experience4": {
+      "title": "Estágio em Desenvolvimento de Software",
+      "company": "DBC Company",
+      "period": "De jun/2022 a ago/2022",
+      "description": "Período de treinamento com entregas contínuas usando React, TypeScript, Redux, HTML e CSS. Projeto final com squad multidisciplinar, criando aplicações com login, cadastro e dashboards conectados a APIs."
+    },
+    "experience5": {
+      "title": "Assistente de Suporte - TI",
+      "company": "Ambev",
+      "period": "De abr/2021 a jun/2022",
+      "description": "Automatização de rotinas financeiras com VBA, reduzindo 75% do tempo gasto. Desenvolvimento de dashboards com Excel e Power BI para monitorar KPIs e suportar tomadas de decisão."
+    }
+  },
+  "Projects": {
+    "title": "Projetos",
+    "project1": {
+      "title": "Courses API",
+      "description": "Sistema de gerenciamento de cursos, permitindo matrículas, feedbacks e relatórios para instrutores."
+    },
+    "project2": {
+      "title": "Image Optimizer",
+      "description": "Aplicação web simples para otimizar imagens de forma prática."
+    },
+    "project3": {
+      "title": "Desafio Casa do Código API",
+      "description": "Projeto desenvolvido para simular as funcionalidades da Casa do Código, com foco em boas práticas e arquitetura."
+    }
+  },
+  "Contact": {
+    "title": "Contato",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "email": "E-mail",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "send": "Enviar"
+  }
+}

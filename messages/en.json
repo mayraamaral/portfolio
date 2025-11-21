@@ -1,0 +1,95 @@
+{
+  "Header": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "experience": "Experience",
+    "academic": "Education",
+    "projects": "Projects",
+    "contact": "Contact",
+    "blog": "Blog",
+    "toggleThemeLight": "Switch to light theme",
+    "toggleThemeDark": "Switch to dark theme"
+  },
+  "Banner": {
+    "role": "Software Engineer passionate about challenges"
+  },
+  "AboutMe": {
+    "titlePart1": "I create",
+    "titlePart2": "impactful",
+    "titlePart3": "solutions through technology.",
+    "description": "Developer since 2015, specialized in Java and Spring, with experience in various languages and technologies such as Js/Node and Python. I possess advanced skills in Git, SQL, databases (SQL and NoSQL), APIs, unit testing, clean code, Docker, Jenkins, Linux, and shell script. Certified in AWS, I also have experience with Azure. I am passionate about solving real challenges and focusing on results, not just tools."
+  },
+  "Academic": {
+    "title": "Education",
+    "study1": {
+      "title": "Analysis and Systems Development",
+      "institution": "UNINTER - International University Center",
+      "period": "Feb/2022 to Jun/2024",
+      "description": "Participation in the Google Developer Student Club and focus on back-end development tools such as Python, Java, Spring Boot, SQL, and data modeling."
+    },
+    "study2": {
+      "title": "Electronics Technician",
+      "institution": "IFPB - Federal Institute of Education, Science and Technology of Paraíba",
+      "period": "Mar/2015 to Feb/2019",
+      "description": "Contact with languages such as C, Python, Matlab, and Java, developing a solid foundation in logic and web development."
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "experience1": {
+      "title": "Software Engineer",
+      "company": "Translational Analytics & Statistics",
+      "period": "Since Apr/2025",
+      "description": "Optimization and creation of SQL queries, strengthening deploys with integration tests, and creating a shared design system that reduced component delivery time, in addition to delivering real-time notifications with Redis + SSE.",
+      "badge": "Current"
+    },
+    "experience2": {
+      "title": "Junior Software Engineer",
+      "company": "Alura",
+      "period": "May/2024 to Apr/2025",
+      "description": "Responsible for a provider-agnostic checkout, optimization of SQL queries through advanced techniques such as CTEs and subqueries, deliveries with feature flags to accelerate feedback, and elimination of vulnerabilities by migrating from joda.time to java.time."
+    },
+    "experience3": {
+      "title": "Junior Software Engineer",
+      "company": "DBC Company",
+      "period": "Sep/2022 to May/2024",
+      "description": "Responsible for the intern team, leading them using agile methodologies such as Scrum and XP, resulting in the creation of a system used by thousands of people without instability. Development of scalable systems, reducing bureaucracy and automating internal processes."
+    },
+    "experience4": {
+      "title": "Software Development Intern",
+      "company": "DBC Company",
+      "period": "Jun/2022 to Aug/2022",
+      "description": "Training period with continuous deliveries using React, TypeScript, Redux, HTML, and CSS. Final project with a multidisciplinary squad, creating applications with login, registration, and dashboards connected to APIs."
+    },
+    "experience5": {
+      "title": "IT Support Assistant",
+      "company": "Ambev",
+      "period": "Apr/2021 to Jun/2022",
+      "description": "Automation of financial routines with VBA, reducing time spent by 75%. Development of dashboards with Excel and Power BI to monitor KPIs and support decision-making."
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "project1": {
+      "title": "Courses API",
+      "description": "Course management system, allowing enrollments, feedback, and reports for instructors."
+    },
+    "project2": {
+      "title": "Image Optimizer",
+      "description": "Simple web application to optimize images in a practical way."
+    },
+    "project3": {
+      "title": "Casa do Código API Challenge",
+      "description": "Project developed to simulate the functionalities of Casa do Código, focusing on best practices and architecture."
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
+  }
+}
