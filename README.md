@@ -5,6 +5,7 @@
 <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript badge" />
 <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind badge" />
 <img src="https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black" alt="React badge" />
+<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker badge" />
 </p>
 
 A modern, multilingual portfolio website showcasing my professional profile, knowledge, and work. Built with Next.js 16 and featuring internationalization support.
@@ -16,6 +17,8 @@ A modern, multilingual portfolio website showcasing my professional profile, kno
   - [Portfolio](#portfolio)
   - [Blog](#blog)
 - [Getting Started](#-getting-started)
+  - [Local Development](#installation)
+  - [Docker Deployment](#docker-deployment)
 - [Folder Structure](#-folder-structure)
 - [Features](#-features)
 - [Goals Accomplished](#-goals-accomplished)
@@ -70,6 +73,70 @@ pnpm lint
 ```
 
 Open [http://localhost:3030](http://localhost:3030) with your browser to see the result.
+
+### Docker Deployment
+
+#### Prerequisites
+
+- Docker
+- Docker Compose (optional)
+
+#### Option 1: Using Docker Only
+
+```bash
+# Build the image
+docker build -t portfolio:latest .
+
+# Run the container
+docker run -d \
+  --name portfolio \
+  -p 3030:3030 \
+  -e NODE_ENV=production \
+  -e PORT=3030 \
+  --restart unless-stopped \
+  portfolio:latest
+
+# View logs
+docker logs -f portfolio
+
+# Stop the container
+docker stop portfolio
+
+# Remove the container
+docker rm portfolio
+
+# Rebuild the image (no cache)
+docker build --no-cache -t portfolio:latest .
+```
+
+#### Option 2: Using Docker Compose
+
+```bash
+# Build and start the container
+docker-compose up -d
+
+# View logs
+docker-compose logs -f portfolio
+
+# Stop the container
+docker-compose down
+
+# Rebuild the image
+docker-compose build --no-cache
+```
+
+**Note**: If you get a network error with Docker Compose, you may need to create the external network first or remove the network configuration from `docker-compose.yml`.
+
+The application will be available at [http://localhost:3030](http://localhost:3030).
+
+#### Docker Configuration
+
+The Docker setup uses a multi-stage build for optimal image size:
+- **Stage 1**: Install dependencies with pnpm
+- **Stage 2**: Build the Next.js application
+- **Stage 3**: Create minimal production runtime
+
+The container runs as a non-root user for enhanced security and uses Next.js standalone output mode for efficient deployment.
 
 ## 📁 Folder Structure
 

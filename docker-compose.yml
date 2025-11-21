@@ -1,0 +1,32 @@
+services:
+  portfolio:
+    image: ghcr.io/mayraamaral/portfolio:main
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3030:3030"
+    environment:
+      - NODE_ENV=production
+      - PORT=3030
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3030/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # Uncomment the following if you need to use external volumes/networks
+    # volumes:
+    #   - portfolio:/app
+    # networks:
+    #   - npm_public
+
+# Uncomment if using external volumes/networks
+# volumes:
+#   portfolio:
+#     external: true
+#
+# networks:
+#   npm_public:
+#     external: true
