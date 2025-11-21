@@ -35,7 +35,7 @@ export function Academic() {
       <ol className="relative mt-10 w-full max-w-3xl border-s border-[var(--surface-border)] pl-6">
         {STUDIES.map((study, index) => (
           <li key={study.title + index} className="mb-12 last:mb-0">
-            <span className="absolute -start-[0.95rem] flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+            <span className="absolute -start-[0.95rem] mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-blue-800">
               <svg
                 className="h-2.5 w-2.5"
                 aria-hidden="true"
