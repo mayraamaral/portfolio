@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 type Experience = {
   title: string;
   company: string;
@@ -7,57 +9,54 @@ type Experience = {
   badge?: string;
 };
 
-const EXPERIENCES: Experience[] = [
-  {
-    title: "Engenheira de Software Pleno",
-    company: "Translational Analytics & Statistics",
-    url: "https://taspro.ai",
-    period: "Desde abr/2025",
-    description:
-      "Otimização e criação de queries SQL, fortalecimento de deploys com testes de integração e criação de um design system compartilhado que reduziu o tempo de entrega de componentes, além da entrega de notificações em tempo real com Redis + SSE.",
-    badge: "Atual",
-  },
-  {
-    title: "Engenheira de Software Júnior",
-    company: "Alura",
-    url: "https://alura.com.br",
-    period: "De mai/2024 a abr/2025",
-    description:
-      "Responsável por um checkout agnóstico de provedores, otimização de consultas SQL através de técnicas avançadas como CTEs e subqueries, entregas com feature flags para acelerar feedbacks e eliminação de vulnerabilidades ao migrar de joda.time para java.time.",
-  },
-  {
-    title: "Engenheira de Software Júnior",
-    company: "DBC Company",
-    url: "https://www.dbccompany.com.br/",
-    period: "De set/2022 a mai/2024",
-    description:
-      "Responsável pelo time de estagiários, liderando-os usando metodologias ágeis como Scrum e XP, resultando na criação de um sistema usado por milhares de pessoas sem instabilidade. Desenvolvimento de sistemas escaláveis, reduzindo burocracia e automatizando processos internos.",
-  },
-  {
-    title: "Estágio em Desenvolvimento de Software",
-    company: "DBC Company",
-    url: "https://www.dbccompany.com.br/",
-    period: "De jun/2022 a ago/2022",
-    description:
-      "Período de treinamento com entregas contínuas usando React, TypeScript, Redux, HTML e CSS. Projeto final com squad multidisciplinar, criando aplicações com login, cadastro e dashboards conectados a APIs.",
-  },
-  {
-    title: "Assistente de Suporte - TI",
-    company: "Ambev",
-    url: "https://ambev.com.br",
-    period: "De abr/2021 a jun/2022",
-    description:
-      "Automatização de rotinas financeiras com VBA, reduzindo 75% do tempo gasto. Desenvolvimento de dashboards com Excel e Power BI para monitorar KPIs e suportar tomadas de decisão.",
-  },
-];
-
 export function Experience() {
+  const t = useTranslations("Experience");
+
+  const EXPERIENCES: Experience[] = [
+    {
+      title: t("experience1.title"),
+      company: t("experience1.company"),
+      url: "https://taspro.ai",
+      period: t("experience1.period"),
+      description: t("experience1.description"),
+      badge: t("experience1.badge"),
+    },
+    {
+      title: t("experience2.title"),
+      company: t("experience2.company"),
+      url: "https://alura.com.br",
+      period: t("experience2.period"),
+      description: t("experience2.description"),
+    },
+    {
+      title: t("experience3.title"),
+      company: t("experience3.company"),
+      url: "https://www.dbccompany.com.br/",
+      period: t("experience3.period"),
+      description: t("experience3.description"),
+    },
+    {
+      title: t("experience4.title"),
+      company: t("experience4.company"),
+      url: "https://www.dbccompany.com.br/",
+      period: t("experience4.period"),
+      description: t("experience4.description"),
+    },
+    {
+      title: t("experience5.title"),
+      company: t("experience5.company"),
+      url: "https://ambev.com.br",
+      period: t("experience5.period"),
+      description: t("experience5.description"),
+    },
+  ];
+
   return (
     <section
       id="experience"
       className="flex flex-col items-center justify-center px-6 pt-32 pb-20"
     >
-      <h2 className="text-4xl font-extrabold text-[var(--foreground)]">Experiência</h2>
+      <h2 className="text-4xl font-extrabold text-[var(--foreground)]">{t("title")}</h2>
       <ol className="relative mt-10 w-full max-w-3xl border-s border-[var(--surface-border)] pl-6">
         {EXPERIENCES.map((item, index) => (
           <li key={item.title + index} className="mb-12 last:mb-0">

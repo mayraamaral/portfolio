@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 type Study = {
   title: string;
   institution: string;
@@ -6,30 +8,30 @@ type Study = {
   badge?: string;
 };
 
-const STUDIES: Study[] = [
-  {
-    title: "Análise e Desenvolvimento de Sistemas",
-    institution: "UNINTER - Centro Universitário Internacional",
-    period: "De fev/2022 a jun/2024",
-    description:
-      "Participação no Google Developer Student Club e foco em ferramentas de desenvolvimento back-end como Python, Java, Spring Boot, SQL e modelagem de dados.",
-  },
-  {
-    title: "Técnica em Eletrônica",
-    institution: "IFPB - Instituto Federal de Educação, Ciência e Tecnologia da Paraíba",
-    period: "De mar/2015 a fev/2019",
-    description:
-      "Contato com linguagens como C, Python, Matlab e Java, desenvolvendo base sólida em lógica e desenvolvimento web.",
-  },
-];
-
 export function Academic() {
+  const t = useTranslations("Academic");
+
+  const STUDIES: Study[] = [
+    {
+      title: t("study1.title"),
+      institution: t("study1.institution"),
+      period: t("study1.period"),
+      description: t("study1.description"),
+    },
+    {
+      title: t("study2.title"),
+      institution: t("study2.institution"),
+      period: t("study2.period"),
+      description: t("study2.description"),
+    },
+  ];
+
   return (
     <section
       id="academic-background"
       className="flex flex-col items-center justify-center px-6 pt-32 pb-20"
     >
-      <h2 className="text-4xl font-extrabold text-[var(--foreground)]">Formação</h2>
+      <h2 className="text-4xl font-extrabold text-[var(--foreground)]">{t("title")}</h2>
       <ol className="relative mt-10 w-full max-w-3xl border-s border-[var(--surface-border)] pl-6">
         {STUDIES.map((study, index) => (
           <li key={study.title + index} className="mb-12 last:mb-0">

@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export function Banner() {
+  const t = useTranslations("Banner");
+
   return (
     <section
       id="home"
@@ -11,7 +14,7 @@ export function Banner() {
         Mayra Amaral
       </h1>
       <p className="max-w-2xl text-lg text-[var(--muted-foreground)]">
-        Engenheira de Software apaixonada por desafios
+        {t("role")}
       </p>
       <div className="flex items-center gap-4 text-4xl">
         <Link

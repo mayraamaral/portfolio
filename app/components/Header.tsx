@@ -1,18 +1,20 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { FaBars, FaMoon, FaSun, FaTerminal } from "react-icons/fa";
 
-const NAV_ITEMS = [
-  { href: "#home", label: "Home" },
-  { href: "#about-me", label: "Sobre mim" },
-  { href: "#experience", label: "Experiência" },
-  { href: "#academic-background", label: "Formação" },
-  { href: "#projects", label: "Projetos" },
-  { href: "#contact", label: "Contato" },
-];
-
 export function Header() {
+  const t = useTranslations("Header");
+
+  const NAV_ITEMS = [
+    { href: "#home", label: t("home") },
+    { href: "#about-me", label: t("aboutMe") },
+    { href: "#experience", label: t("experience") },
+    { href: "#academic-background", label: t("academic") },
+    { href: "#projects", label: t("projects") },
+    { href: "#contact", label: t("contact") },
+  ];
   const [theme, setTheme] = useState<"light" | "dark">(() => getInitialTheme());
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -98,16 +100,16 @@ export function Header() {
                 rel="noopener noreferrer"
                 className="transition text-white hover:text-[var(--accent)]"
               >
-                Blog
+                {t("blog")}
               </a>
             </li>
           </ul>
         </nav>
-        <div className="ml-6 flex items-center gap-3">
+        <div className="ml-6 flex items-center gap-3 ml-auto">
           <button
             onClick={toggleTheme}
             className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-white transition hover:bg-white/10"
-            aria-label={isDarkMode ? "Ativar tema claro" : "Ativar tema escuro"}
+            aria-label={isDarkMode ? t("toggleThemeLight") : t("toggleThemeDark")}
             type="button"
           >
             {theme === "dark" ? <FaSun className="text-2xl" /> : <FaMoon className="text-2xl" />}
@@ -148,7 +150,7 @@ export function Header() {
                 rel="noopener noreferrer"
                 className="block rounded px-3 py-2 transition text-white hover:bg-white/10"
               >
-                Blog
+                {t("blog")}
               </a>
             </li>
           </ul>
