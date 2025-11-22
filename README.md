@@ -44,7 +44,10 @@ A modern, multilingual portfolio website showcasing my professional profile, kno
 
 ### Blog
 
-In development...
+- **WordPress** latest
+- **MySQL** v8
+- **Docker Compose** (via Coolify)
+- **Deploy:** Self-hosted with Coolify
 
 ## 🚀 Getting Started
 
