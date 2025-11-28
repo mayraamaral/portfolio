@@ -17,7 +17,7 @@
     "titlePart1": "I create",
     "titlePart2": "impactful",
     "titlePart3": "solutions through technology.",
-    "description": "Developer since 2015, specialized in Java and Spring, with experience in various languages and technologies such as Js/Node and Python. I possess advanced skills in Git, SQL, databases (SQL and NoSQL), APIs, unit testing, clean code, Docker, Jenkins, Linux, and shell script. Certified in AWS, I also have experience with Azure. I am passionate about solving real challenges and focusing on results, not just tools."
+    "description": "Developer since 2015, specialized in TypeScript and JavaScript, with experience in various languages and technologies such as Java and Python. I possess advanced skills in Git, SQL, databases (SQL and NoSQL), APIs, unit testing, clean code, Docker, Jenkins, Linux, and shell script. Certified in AWS, I also have experience with Azure and OCI. I am passionate about solving real challenges and focusing on results, not just tools."
   },
   "Academic": {
     "title": "Education",
@@ -44,7 +44,7 @@
       "badge": "Current"
     },
     "experience2": {
-      "title": "Junior Software Engineer",
+      "title": "Software Engineer",
       "company": "Alura",
       "period": "May/2024 to Apr/2025",
       "description": "Responsible for a provider-agnostic checkout, optimization of SQL queries through advanced techniques such as CTEs and subqueries, deliveries with feature flags to accelerate feedback, and elimination of vulnerabilities by migrating from joda.time to java.time."

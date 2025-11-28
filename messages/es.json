@@ -17,7 +17,7 @@
     "titlePart1": "Creo soluciones",
     "titlePart2": "de impacto",
     "titlePart3": "a través de la tecnología.",
-    "description": "Desarrolladora desde 2015, especializada en Java y Spring, con experiencia en diversos lenguajes y tecnologías como Js/Node y Python. Poseo habilidades avanzadas en Git, SQL, bases de datos (SQL y NoSQL), APIs, pruebas unitarias, clean code, Docker, Jenkins, Linux y shell script. Certificada en AWS, también tengo experiencia en Azure. Me apasiona resolver desafíos reales y enfocarme en los resultados, no solo en las herramientas."
+    "description": "Desarrolladora desde 2015, especializada en TypeScript y JavaScript, con experiencia en diversos lenguajes y tecnologías como Java y Python. Poseo habilidades avanzadas en Git, SQL, bases de datos (SQL y NoSQL), APIs, pruebas unitarias, clean code, Docker, Jenkins, Linux y shell script. Certificada en AWS, también tengo experiencia en Azure y OCI. Me apasiona resolver desafíos reales y enfocarme en los resultados, no solo en las herramientas."
   },
   "Academic": {
     "title": "Educación",
@@ -44,7 +44,7 @@
       "badge": "Actual"
     },
     "experience2": {
-      "title": "Ingeniera de Software Junior",
+      "title": "Ingeniera de Software Pleno",
       "company": "Alura",
       "period": "May/2024 a Abr/2025",
       "description": "Responsable de un checkout agnóstico de proveedores, optimización de consultas SQL a través de técnicas avanzadas como CTEs y subconsultas, entregas con feature flags para acelerar feedbacks y eliminación de vulnerabilidades al migrar de joda.time a java.time."
